@@ -1,0 +1,851 @@
+Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 1.2942657470703125Time :function timeStamp() { [native code] }
+Free memory: 0.9801139831542969
+Platform:win32Time :function timeStamp() { [native code] }
+Free memory: 0.9801139831542969
+Platform:win32Time :function timeStamp() { [native code] }
+Free memory: 0.9801139831542969
+Platform:win32Time :function timeStamp() { [native code] }
+Free memory: 0.9801139831542969
+Platform:win32Time :function timeStamp() { [native code] }
+Free memory: 0.9801139831542969
+Platform:win32Time :function timeStamp() { [native code] }
+Free memory: 0.9801139831542969
+Platform:win32Time :function timeStamp() { [native code] }
+Free memory: 0.9801139831542969
+Platform:win32Time :function timeStamp() { [native code] }
+Free memory: 0.9801139831542969
+Platform:win32Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}Time :function timeStamp() { [native code] }
+Free memory: 1.2982101440429688
+Platform:win32
+cpu:function cpus() {
+  // [] is a bugfix for a regression introduced in 51cea61
+  const data = getCPUs() || [];
+  const result = [];
+  let i = 0;
+  while (i < data.length) {
+    ArrayPrototypePush(result, {
+      model: data[i++],
+      speed: data[i++],
+      times: {
+        user: data[i++],
+        nice: data[i++],
+        sys: data[i++],
+        idle: data[i++],
+        irq: data[i++],
+      },
+    });
+  }
+  return result;
+}
