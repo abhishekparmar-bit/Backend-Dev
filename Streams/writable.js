@@ -1,34 +1,16 @@
 const fs=require("fs")
-const path=require("path")
-
+const path=require("path");
+const {Transform}=require("stream")
 const inputFilePath=path.join(__dirname,"100MB.txt")
-
 const outputFilePath=path.join(__dirname,"output.txt")
 
-const inputStream=fs.createReadStream(inputFilePath)
+const readStream=fs.createReadStream(inputFilePath,"utf-8")
 
-// inputStream.on("data",(chunk)=>{
-//     console.log("data is reading in chunks:",chunk);
+const writeStream=fs.createWriteStream(outputFilePath,"utf-8");
+readStream.pipe(writeStream);
+
+writeStream.on("finish",()=>{
+    console.log("write stream is end");
     
-// })
+})
 
-const file=fs.readFileSync("Streams/100MB.txt","")
-console.log(file);
-
-
-// const asyncFile = fs.readFile("Streams/100MB.txt","utf-8",(err,data)=>{
-//     if(err){
-//         console.log("Errror in file reading",err);  
-//     }
-//     else{
-//         console.log("File Reading successfull",data);
-        
-//     }
-// })
-
-
-
-
-// const writeStream=fs.createWriteStream(outputStream)
-
-// inputStream.pipe(outputStream)
