@@ -1,1 +1,240 @@
 
+use collegeDB
+switched to db collegeDB
+db.students.insertOne({
+    name: "Rahul",
+    age: 20,
+    course: "B.Tech"
+})
+{
+  acknowledged: true,
+  insertedId: ObjectId('69ba67d514ba618f36bc97eb')
+}
+db.students.insertMany([
+    { name: "Amit", age: 21, course: "BCA" },
+    { name: "Neha", age: 19, course: "B.Sc" },
+    { name: "Priya", age: 22, course: "MCA" }
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('69ba67e014ba618f36bc97ec'),
+    '1': ObjectId('69ba67e014ba618f36bc97ed'),
+    '2': ObjectId('69ba67e014ba618f36bc97ee')
+  }
+}
+db.students.find()
+{
+  _id: ObjectId('69ba67d514ba618f36bc97eb'),
+  name: 'Rahul',
+  age: 20,
+  course: 'B.Tech'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ec'),
+  name: 'Amit',
+  age: 21,
+  course: 'BCA'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ed'),
+  name: 'Neha',
+  age: 19,
+  course: 'B.Sc'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ee'),
+  name: 'Priya',
+  age: 22,
+  course: 'MCA'
+}
+db.students.find().pretty()
+{
+  _id: ObjectId('69ba67d514ba618f36bc97eb'),
+  name: 'Rahul',
+  age: 20,
+  course: 'B.Tech'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ec'),
+  name: 'Amit',
+  age: 21,
+  course: 'BCA'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ed'),
+  name: 'Neha',
+  age: 19,
+  course: 'B.Sc'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ee'),
+  name: 'Priya',
+  age: 22,
+  course: 'MCA'
+}
+db.students.findOne({ name: "Rahul" })
+{
+  _id: ObjectId('69ba67d514ba618f36bc97eb'),
+  name: 'Rahul',
+  age: 20,
+  course: 'B.Tech'
+}
+db.students.find({ age: { $gt: 20 } })
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ec'),
+  name: 'Amit',
+  age: 21,
+  course: 'BCA'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ee'),
+  name: 'Priya',
+  age: 22,
+  course: 'MCA'
+}
+show dbs
+admin      40.00 KiB
+chatbot    40.00 KiB
+collegeDB  72.00 KiB
+config     72.00 KiB
+local      88.00 KiB
+show collections
+students
+db.students.updateOne(
+  { name: "Rahul" },   // filter
+  { $set: { age: 21 } } // update
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.students.updateMany(
+  { course: "BCA" },
+  { $set: { course: "BCA Updated" } }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.students.updateOne(
+  { name: "Amit" },
+  { $set: { city: "Delhi" } }
+)
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.students.updateOne(
+  { name: "Abhishek" },
+  { $set: { city: "Delhi" } },
+  { upsert : true}
+)
+{
+  acknowledged: true,
+  insertedId: ObjectId('69ba6bd48d02ca14a42dad50'),
+  matchedCount: 0,
+  modifiedCount: 0,
+  upsertedCount: 1
+}
+db.students.find({ city: "Delhi" })
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ec'),
+  name: 'Amit',
+  age: 21,
+  course: 'BCA Updated',
+  city: 'Delhi'
+}
+{
+  _id: ObjectId('69ba6bd48d02ca14a42dad50'),
+  name: 'Abhishek',
+  city: 'Delhi'
+}
+db.students.find($inc{ age>19 })
+SyntaxError: Unexpected token, expected "," (1:21)
+
+> 1 | db.students.find($inc{ age>19 })
+    |                      ^
+db.students.find($gt { age>19 })
+SyntaxError: Unexpected token, expected "," (1:21)
+
+> 1 | db.students.find($gt { age>19 })
+    |                      ^
+db.students.find({ age: { $gt: 19 } })
+{
+  _id: ObjectId('69ba67d514ba618f36bc97eb'),
+  name: 'Rahul',
+  age: 21,
+  course: 'B.Tech'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ec'),
+  name: 'Amit',
+  age: 21,
+  course: 'BCA Updated',
+  city: 'Delhi'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ee'),
+  name: 'Priya',
+  age: 22,
+  course: 'MCA'
+}
+db.students.insertMany([
+  {name:"Abhi",age:22,course:"B.tech",city:"Delhi",feesPaid:true},
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('69ba732614ba618f36bc97ef')
+  }
+}
+db.students.insertMany([
+  {name:"Abhi",age:22,course:"B.tech",city:"Delhi",feesPaid:true},
+  {name:"Anu",age:23,course:"BCA",city:"mathura",feesPaid:false}
+])
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('69ba738614ba618f36bc97f0'),
+    '1': ObjectId('69ba738614ba618f36bc97f1')
+  }
+}
+db.students.find({age:{$gt:19}},{course:"BCA"})
+{
+  _id: ObjectId('69ba67d514ba618f36bc97eb'),
+  course: 'BCA'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ec'),
+  course: 'BCA'
+}
+{
+  _id: ObjectId('69ba67e014ba618f36bc97ee'),
+  course: 'BCA'
+}
+{
+  _id: ObjectId('69ba732614ba618f36bc97ef'),
+  course: 'BCA'
+}
+{
+  _id: ObjectId('69ba738614ba618f36bc97f0'),
+  course: 'BCA'
+}
+{
+  _id: ObjectId('69ba738614ba618f36bc97f1'),
+  course: 'BCA'
+}
+db.students.find(
+  { course: "BCA", age: { $gt: 20 } },
+  { name: 1, course: 1}
+)
