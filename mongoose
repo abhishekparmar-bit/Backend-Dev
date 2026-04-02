@@ -1,0 +1,149 @@
+Advantages of using Mongoose over native MongoDB driver
+Schema-based structure:
+Mongoose lets you define schemas, while MongoDB driver is schema-less.
+Data validation:
+Built-in validation (required, min, max, etc.)
+Middleware support:
+You can run functions before/after operations (hooks).
+Easier querying:
+Cleaner and more readable syntax.
+Relationships handling:
+Supports population (similar to joins).
+Model abstraction:
+Works with models instead of raw collections.
+
+Example:
+Without Mongoose:
+db.collection("users").insertOne({...})
+
+With Mongoose:
+User.create({...})
+
+Difference between findOneAndUpdate() and updateOne()
+
+findOneAndUpdate():
+
+Finds a document AND updates it
+Returns the document (old or new)
+Can use option { new: true } to get updated doc
+
+Example:
+User.findOneAndUpdate(
+{ name: "Abhishek" },
+{ age: 22 },
+{ new: true }
+)
+
+updateOne():
+
+Updates only (does NOT return updated document)
+Returns result object (acknowledged, modifiedCount)
+
+Example:
+User.updateOne(
+{ name: "Abhishek" },
+{ age: 22 }
+)
+
+Key Difference:
+
+findOneAndUpdate → returns document
+updateOne → returns status/result
+Purpose of Middleware in Mongoose
+
+Middleware (hooks) are functions that run:
+
+Before (pre)
+After (post)
+
+Used for:
+
+Validation
+Logging
+Password hashing
+Data transformation
+
+Example:
+userSchema.pre("save", function(next) {
+console.log("Before saving user");
+next();
+});
+
+userSchema.post("save", function(doc) {
+console.log("User saved:", doc);
+});
+
+Pagination in Mongoose
+
+Using skip() and limit():
+
+Example:
+const page = 1;
+const limit = 10;
+
+const users = await User.find()
+.skip((page - 1) * limit)
+.limit(limit);
+
+Explanation:
+
+skip() → skips previous records
+limit() → number of records per page
+
+Optional response:
+{
+total: totalUsers,
+page: 1,
+limit: 10,
+data: users
+}
+
+Embedding vs Referencing in MongoDB
+
+Embedding (Nested Documents):
+
+Store related data inside one document
+
+Example:
+{
+name: "Abhishek",
+orders: [
+{ item: "Book", price: 100 }
+]
+}
+
+Use when:
+
+Data is tightly related
+Read operations are frequent
+Data size is small
+
+Referencing (Using ObjectId):
+
+Store references to another collection
+
+Example:
+{
+name: "Abhishek",
+orders: [ObjectId("123")]
+}
+
+Use when:
+
+Data is large
+Data is shared across multiple documents
+Frequent updates required
+
+Key Difference:
+
+Embedding:
+
+Faster reads
+No joins needed
+Can grow large
+
+Referencing:
+
+More flexible
+Avoids duplication
+Requires population (like joins)
