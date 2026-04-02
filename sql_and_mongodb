@@ -1,0 +1,115 @@
+Q1
+SQL vs NoSQL (Key Differences)
+
+SQL (Relational Databases):
+
+Uses tables (rows and columns)
+Fixed schema
+Supports joins
+Strong ACID properties
+Scales vertically
+Examples: MySQL, PostgreSQL
+
+NoSQL (Non-relational Databases):
+
+Uses flexible formats (JSON, key-value, graph)
+Dynamic schema
+Limited or no joins
+Eventual consistency (BASE)
+Scales horizontally
+Examples: MongoDB, Redis
+
+Example:
+
+SQL Query:
+SELECT * FROM students WHERE gpa > 3.5;
+
+MongoDB Query:
+db.students.find({ gpa: { $gt: 3.5 } })
+
+Q2
+
+CAP Theorem
+
+CAP stands for:
+
+Consistency: All nodes see the same data
+Availability: Every request gets a response
+Partition Tolerance: System works despite network failures
+
+Key Idea:
+A distributed system can guarantee only 2 out of these 3 properties.
+
+Reason:
+Network failures (partitions) are unavoidable, so the system must choose between:
+
+Consistency (may reject requests)
+Availability (may return stale data)
+
+Examples:
+
+MongoDB → CP (Consistency + Partition Tolerance)
+Cassandra → AP (Availability + Partition Tolerance)
+When MongoDB is Preferred
+Flexible Schema:
+Data structure can vary between documents.
+
+Example:
+{ name: "Abhishek", skills: ["JS", "Node"] }
+{ name: "Ravi", age: 22 }
+
+High Scalability:
+Used in:
+Social media apps
+Logging systems
+E-commerce platforms
+Nested / Complex Data:
+Supports embedded documents.
+
+Example:
+{
+name: "Book",
+author: {
+name: "John",
+age: 40
+}
+}
+
+Q3
+Why MongoDB Uses BSON
+
+BSON = Binary JSON
+
+Advantages:
+
+Faster processing (binary format)
+Supports more data types (Date, ObjectId, Binary)
+Efficient storage
+
+Example:
+{
+_id: ObjectId("..."),
+createdAt: ISODate("2026-04-02")
+}
+
+Q4
+
+Find students with GPA > 3.5 and enrolled in CS101:
+
+db.students.find({
+gpa: { $gt: 3.5 },
+courses: "CS101"
+})
+
+If courses is an array:
+{
+name: "Abhishek",
+gpa: 3.8,
+courses: ["CS101", "MA101"]
+}
+
+Alternative query:
+db.students.find({
+gpa: { $gt: 3.5 },
+courses: { $in: ["CS101"] }
+})
